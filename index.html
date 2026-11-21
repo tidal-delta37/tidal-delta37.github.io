@@ -1,0 +1,1684 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>安安老师 - 官方视频品牌站,用心陪伴每一次成长</title>
+<meta name="description" content="安安老师官方网站，专注家庭教育与亲子成长视频内容，用真实、温暖、专业的原创影像陪伴每个家庭，记录孩子成长的每一步。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23c2557a'/%3E%3Ccircle cx='32' cy='24' r='10' fill='%23fdeef2'/%3E%3Cpath d='M14 54c2-12 10-18 18-18s16 6 18 18z' fill='%23fdeef2'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --aat-rose:#c2557a;
+    --aat-rose-deep:#8f3555;
+    --aat-rose-soft:#f7dbe4;
+    --aat-lilac:#7d6a9c;
+    --aat-ink:#2f2833;
+    --aat-ink-soft:#65596b;
+    --aat-paper:#fdf8fa;
+    --aat-card:#ffffff;
+    --aat-line:#eedde4;
+    --aat-gold:#c9a15a;
+    --aat-shadow:0 10px 30px rgba(143,53,85,.10);
+    --aat-radius:18px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+    background:var(--aat-paper);
+    color:var(--aat-ink);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  ul{list-style:none;}
+  button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;}
+
+  .aat-sticky-wrap{
+    position:sticky;top:0;z-index:90;
+    box-shadow:0 4px 20px rgba(143,53,85,.08);
+  }
+
+  /* ============ 公告条 ============ */
+  .aat-notice-bar{
+    background:linear-gradient(90deg,var(--aat-rose-deep),var(--aat-rose));
+    color:#fff;
+    font-size:13.5px;
+    letter-spacing:.3px;
+  }
+  .aat-notice-inner{
+    max-width:1200px;margin:0 auto;
+    padding:8px 20px;
+    display:flex;align-items:center;gap:12px;
+    overflow:hidden;
+  }
+  .aat-notice-tag{
+    flex:none;
+    background:rgba(255,255,255,.2);
+    border:1px solid rgba(255,255,255,.35);
+    padding:1px 10px;border-radius:999px;
+    font-size:12px;font-weight:600;
+  }
+  .aat-notice-track{
+    flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  }
+  .aat-notice-track span{opacity:.95;}
+  .aat-notice-more{
+    flex:none;font-size:12px;padding:2px 12px;border-radius:999px;
+    background:rgba(255,255,255,.16);transition:.25s;
+  }
+  .aat-notice-more:hover{background:rgba(255,255,255,.3);}
+
+  /* ============ 页头 ============ */
+  .aat-header{
+    background:rgba(253,248,250,.94);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--aat-line);
+  }
+  .aat-header-inner{
+    max-width:1200px;margin:0 auto;
+    padding:0 20px;
+    height:68px;
+    display:flex;align-items:center;gap:26px;
+  }
+  .aat-logo{
+    display:flex;align-items:center;gap:10px;flex:none;
+  }
+  .aat-logo-mark{
+    width:40px;height:40px;border-radius:12px;
+    background:linear-gradient(135deg,var(--aat-rose),var(--aat-lilac));
+    color:#fff;font-weight:700;font-size:17px;
+    display:grid;place-items:center;
+    box-shadow:0 6px 14px rgba(194,85,122,.35);
+  }
+  .aat-logo-text b{font-size:17px;letter-spacing:.5px;display:block;line-height:1.2;}
+  .aat-logo-text small{font-size:11px;color:var(--aat-ink-soft);letter-spacing:2px;}
+
+  .aat-nav{flex:1;}
+  .aat-nav ul{display:flex;gap:4px;}
+  .aat-nav a{
+    display:block;padding:8px 13px;border-radius:10px;
+    font-size:14.5px;color:var(--aat-ink-soft);
+    transition:.22s;position:relative;
+  }
+  .aat-nav a:hover,.aat-nav a.aat-active{color:var(--aat-rose-deep);background:var(--aat-rose-soft);}
+
+  .aat-header-tools{display:flex;align-items:center;gap:10px;flex:none;}
+  .aat-search-box{
+    display:flex;align-items:center;
+    background:#fff;border:1px solid var(--aat-line);
+    border-radius:999px;padding:6px 8px 6px 14px;
+    gap:6px;transition:.25s;
+  }
+  .aat-search-box:focus-within{border-color:var(--aat-rose);box-shadow:0 0 0 3px rgba(194,85,122,.12);}
+  .aat-search-box input{
+    border:none;outline:none;background:none;
+    width:132px;font-size:13.5px;color:var(--aat-ink);
+  }
+  .aat-search-box input::placeholder{color:#b6a9b1;}
+  .aat-search-btn{
+    width:28px;height:28px;border-radius:50%;
+    background:var(--aat-rose);color:#fff;
+    display:grid;place-items:center;font-size:13px;
+    transition:.22s;
+  }
+  .aat-search-btn:hover{background:var(--aat-rose-deep);}
+  .aat-search-hint{
+    position:absolute;display:none;
+    margin-top:8px;background:#fff;border:1px solid var(--aat-line);
+    border-radius:12px;padding:8px 12px;font-size:12.5px;color:var(--aat-rose-deep);
+    box-shadow:var(--aat-shadow);z-index:50;
+  }
+  .aat-search-wrap{position:relative;}
+  .aat-header-cta{
+    background:linear-gradient(135deg,var(--aat-rose),var(--aat-rose-deep));
+    color:#fff;font-size:13.5px;padding:9px 18px;border-radius:999px;
+    box-shadow:0 6px 16px rgba(194,85,122,.3);transition:.22s;white-space:nowrap;
+  }
+  .aat-header-cta:hover{transform:translateY(-1px);}
+
+  .aat-burger{
+    display:none;width:40px;height:40px;border-radius:10px;
+    border:1px solid var(--aat-line);place-items:center;
+  }
+  .aat-burger span{display:block;width:18px;height:2px;background:var(--aat-ink);margin:3px 0;border-radius:2px;transition:.25s;}
+
+  /* ============ 通用容器 ============ */
+  .aat-section{max-width:1200px;margin:0 auto;padding:70px 20px;}
+  .aat-section-head{margin-bottom:34px;}
+  .aat-eyebrow{
+    display:inline-block;font-size:12.5px;font-weight:600;
+    letter-spacing:2px;color:var(--aat-rose);
+    background:var(--aat-rose-soft);
+    padding:4px 14px;border-radius:999px;margin-bottom:14px;
+  }
+  .aat-section-head h2{
+    font-size:clamp(23px,3vw,31px);line-height:1.35;
+    letter-spacing:.5px;
+  }
+  .aat-section-head p{color:var(--aat-ink-soft);font-size:14.5px;margin-top:10px;max-width:720px;}
+
+  /* ============ 首屏 ============ */
+  .aat-hero{
+    background:
+      radial-gradient(circle at 88% 12%,rgba(247,219,228,.9),transparent 46%),
+      radial-gradient(circle at 6% 92%,rgba(125,106,156,.16),transparent 42%),
+      linear-gradient(160deg,#fff 0%,var(--aat-paper) 60%);
+    border-bottom:1px solid var(--aat-line);
+  }
+  .aat-hero-inner{
+    max-width:1200px;margin:0 auto;padding:58px 20px 64px;
+    display:grid;grid-template-columns:1.08fr .92fr;gap:52px;align-items:center;
+  }
+  .aat-hero-badge{
+    display:inline-flex;align-items:center;gap:8px;
+    background:#fff;border:1px solid var(--aat-line);
+    border-radius:999px;padding:6px 16px;font-size:12.5px;
+    color:var(--aat-rose-deep);font-weight:600;letter-spacing:.5px;
+    box-shadow:0 4px 12px rgba(143,53,85,.06);margin-bottom:20px;
+  }
+  .aat-hero-badge i{
+    width:7px;height:7px;border-radius:50%;background:var(--aat-rose);
+    box-shadow:0 0 0 4px rgba(194,85,122,.18);
+  }
+  .aat-hero h1{
+    font-size:clamp(38px,5.4vw,60px);
+    line-height:1.1;letter-spacing:2px;
+    background:linear-gradient(120deg,var(--aat-rose-deep),var(--aat-rose) 45%,var(--aat-lilac));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    margin-bottom:14px;
+  }
+  .aat-hero-slogan{
+    font-size:clamp(16px,1.7vw,19px);font-weight:600;
+    color:var(--aat-ink);margin-bottom:16px;letter-spacing:.5px;
+  }
+  .aat-hero-desc{font-size:14.8px;color:var(--aat-ink-soft);margin-bottom:26px;}
+  .aat-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:34px;}
+  .aat-btn-primary{
+    background:linear-gradient(135deg,var(--aat-rose),var(--aat-rose-deep));
+    color:#fff;padding:12px 26px;border-radius:12px;font-size:14.5px;font-weight:600;
+    box-shadow:0 8px 20px rgba(194,85,122,.28);transition:.22s;
+  }
+  .aat-btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(194,85,122,.36);}
+  .aat-btn-ghost{
+    border:1.5px solid var(--aat-line);background:#fff;
+    color:var(--aat-rose-deep);padding:12px 24px;border-radius:12px;
+    font-size:14.5px;font-weight:600;transition:.22s;
+  }
+  .aat-btn-ghost:hover{border-color:var(--aat-rose);background:var(--aat-rose-soft);}
+  .aat-hero-stats{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:14px;
+    border-top:1px dashed var(--aat-line);padding-top:22px;
+  }
+  .aat-stat-num{
+    font-size:26px;font-weight:700;color:var(--aat-rose-deep);
+    line-height:1.1;letter-spacing:.5px;
+  }
+  .aat-stat-num small{font-size:13px;font-weight:600;color:var(--aat-rose);margin-left:2px;}
+  .aat-stat-label{font-size:12.5px;color:var(--aat-ink-soft);margin-top:4px;}
+
+  .aat-hero-visual{position:relative;}
+  .aat-hero-cover{
+    border-radius:24px;overflow:hidden;
+    box-shadow:0 24px 50px rgba(143,53,85,.18);
+    border:6px solid #fff;
+    position:relative;
+  }
+  .aat-hero-cover img{width:100%;aspect-ratio:4/3.1;object-fit:cover;}
+  .aat-hero-cover .aat-cover-tag{
+    position:absolute;top:14px;left:14px;
+    background:rgba(47,40,51,.62);color:#fff;
+    font-size:12px;padding:4px 12px;border-radius:999px;backdrop-filter:blur(6px);
+  }
+  .aat-hero-float{
+    position:absolute;bottom:-22px;left:-22px;
+    background:#fff;border-radius:16px;padding:14px 18px;
+    box-shadow:var(--aat-shadow);border:1px solid var(--aat-line);
+    display:flex;align-items:center;gap:12px;max-width:250px;
+  }
+  .aat-hero-float .aat-avatar{
+    width:38px;height:38px;border-radius:50%;
+    background:linear-gradient(135deg,var(--aat-lilac),var(--aat-rose));
+    color:#fff;font-weight:700;display:grid;place-items:center;font-size:15px;flex:none;
+  }
+  .aat-hero-float b{font-size:13.5px;display:block;}
+  .aat-hero-float small{font-size:11.5px;color:var(--aat-ink-soft);}
+
+  /* ============ 品牌解析(长文) ============ */
+  .aat-about{
+    background:#fff;border-bottom:1px solid var(--aat-line);
+  }
+  .aat-about-grid{
+    display:grid;grid-template-columns:1fr 1.6fr;gap:46px;align-items:start;
+  }
+  .aat-about-aside{
+    background:linear-gradient(170deg,var(--aat-rose-soft),#fff 70%);
+    border:1px solid var(--aat-line);border-radius:var(--aat-radius);
+    padding:28px 26px;position:sticky;top:130px;
+  }
+  .aat-about-aside h3{font-size:17px;margin-bottom:14px;color:var(--aat-rose-deep);}
+  .aat-about-aside p{font-size:13.5px;color:var(--aat-ink-soft);margin-bottom:16px;}
+  .aat-tagcloud{display:flex;flex-wrap:wrap;gap:8px;}
+  .aat-tagcloud span{
+    font-size:12px;padding:4px 12px;border-radius:999px;
+    background:#fff;border:1px solid var(--aat-line);color:var(--aat-rose-deep);
+  }
+  .aat-about-body h2{font-size:clamp(22px,2.6vw,28px);margin-bottom:18px;line-height:1.4;}
+  .aat-about-body h3{
+    font-size:16.5px;margin:26px 0 10px;color:var(--aat-rose-deep);
+    padding-left:12px;border-left:4px solid var(--aat-rose);border-radius:2px;
+  }
+  .aat-about-body p{font-size:14.6px;color:#4a4150;margin-bottom:12px;text-align:justify;}
+
+  /* ============ 焦点视频 ============ */
+  .aat-focus{background:linear-gradient(180deg,var(--aat-paper),#fff);}
+  .aat-focus-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:22px;}
+  .aat-focus-main{
+    position:relative;border-radius:22px;overflow:hidden;
+    box-shadow:var(--aat-shadow);cursor:pointer;
+  }
+  .aat-focus-main img{width:100%;height:100%;min-height:340px;object-fit:cover;transition:transform .6s;}
+  .aat-focus-main:hover img{transform:scale(1.045);}
+  .aat-focus-overlay{
+    position:absolute;inset:0;
+    background:linear-gradient(180deg,transparent 28%,rgba(47,40,51,.82));
+    display:flex;flex-direction:column;justify-content:flex-end;
+    padding:26px;color:#fff;
+  }
+  .aat-focus-overlay .aat-kicker{
+    font-size:12px;letter-spacing:1.5px;background:rgba(194,85,122,.9);
+    align-self:flex-start;padding:3px 12px;border-radius:999px;margin-bottom:10px;
+  }
+  .aat-focus-overlay h3{font-size:21px;line-height:1.4;margin-bottom:8px;}
+  .aat-focus-overlay p{font-size:13px;opacity:.85;margin-bottom:14px;}
+  .aat-focus-meta{display:flex;gap:16px;font-size:12px;opacity:.85;flex-wrap:wrap;}
+
+  .aat-focus-side{display:grid;grid-template-rows:repeat(4,1fr);gap:14px;}
+  .aat-mini-card{
+    display:flex;gap:12px;background:#fff;border:1px solid var(--aat-line);
+    border-radius:14px;padding:10px;transition:.25s;align-items:center;
+  }
+  .aat-mini-card:hover{transform:translateX(4px);border-color:var(--aat-rose);box-shadow:0 8px 18px rgba(143,53,85,.1);}
+  .aat-mini-thumb{width:92px;flex:none;border-radius:10px;overflow:hidden;position:relative;}
+  .aat-mini-thumb img{width:100%;aspect-ratio:16/10;object-fit:cover;}
+  .aat-mini-thumb .aat-play-dot{
+    position:absolute;inset:0;display:grid;place-items:center;
+    color:#fff;font-size:12px;
+    background:rgba(47,40,51,.22);
+  }
+  .aat-mini-info b{font-size:13.5px;display:block;line-height:1.45;margin-bottom:4px;}
+  .aat-mini-info small{font-size:11.5px;color:var(--aat-ink-soft);}
+
+  /* ============ 视频流卡片 ============ */
+  .aat-stream{background:#fff;border-top:1px solid var(--aat-line);}
+  .aat-filter-bar{
+    display:flex;flex-wrap:wrap;gap:9px;margin-bottom:26px;
+  }
+  .aat-chip{
+    font-size:13px;padding:6px 16px;border-radius:999px;
+    border:1px solid var(--aat-line);background:#fff;color:var(--aat-ink-soft);
+    transition:.22s;
+  }
+  .aat-chip:hover{border-color:var(--aat-rose);color:var(--aat-rose-deep);}
+  .aat-chip.aat-on{background:var(--aat-rose);border-color:var(--aat-rose);color:#fff;font-weight:600;}
+  .aat-video-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:24px;
+  }
+  .aat-vcard{
+    background:#fff;border:1px solid var(--aat-line);border-radius:var(--aat-radius);
+    overflow:hidden;transition:.28s;display:flex;flex-direction:column;
+  }
+  .aat-vcard:hover{transform:translateY(-5px);box-shadow:0 18px 34px rgba(143,53,85,.14);border-color:#f3c6d4;}
+  .aat-vcover{position:relative;overflow:hidden;}
+  .aat-vcover img{width:100%;aspect-ratio:16/9;object-fit:cover;transition:transform .5s;}
+  .aat-vcard:hover .aat-vcover img{transform:scale(1.06);}
+  .aat-vcover .aat-vlabel{
+    position:absolute;top:10px;left:10px;
+    font-size:11px;font-weight:600;color:#fff;
+    background:rgba(194,85,122,.92);padding:2px 10px;border-radius:999px;
+  }
+  .aat-vcover .aat-duration{
+    position:absolute;bottom:10px;right:10px;
+    font-size:11px;color:#fff;background:rgba(47,40,51,.7);
+    padding:1px 8px;border-radius:6px;
+  }
+  .aat-vbody{padding:16px 16px 14px;flex:1;display:flex;flex-direction:column;}
+  .aat-vbody h3{font-size:15px;line-height:1.5;margin-bottom:7px;}
+  .aat-vbody p{font-size:12.8px;color:var(--aat-ink-soft);margin-bottom:12px;flex:1;}
+  .aat-vmeta{
+    display:flex;align-items:center;justify-content:space-between;gap:8px;
+    font-size:12px;color:var(--aat-ink-soft);border-top:1px dashed var(--aat-line);
+    padding-top:11px;
+  }
+  .aat-author-line{display:flex;align-items:center;gap:7px;}
+  .aat-mini-avatar{
+    width:24px;height:24px;border-radius:50%;flex:none;
+    display:grid;place-items:center;font-size:11px;font-weight:700;color:#fff;
+  }
+  .aat-vactions{display:flex;gap:10px;}
+  .aat-icon-btn{
+    font-size:12px;color:var(--aat-ink-soft);display:flex;align-items:center;gap:3px;
+    transition:.2s;
+  }
+  .aat-icon-btn:hover{color:var(--aat-rose);}
+  .aat-icon-btn.aat-liked{color:var(--aat-rose);font-weight:600;}
+  .aat-icon-btn.aat-saved{color:var(--aat-gold);font-weight:600;}
+
+  /* ============ 专题 ============ */
+  .aat-special{background:linear-gradient(180deg,#fff,var(--aat-paper));}
+  .aat-special-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .aat-special-card{
+    border-radius:var(--aat-radius);overflow:hidden;position:relative;
+    min-height:250px;display:flex;flex-direction:column;justify-content:flex-end;
+    padding:22px;color:#fff;box-shadow:var(--aat-shadow);cursor:pointer;
+    transition:.3s;
+  }
+  .aat-special-card:hover{transform:translateY(-4px);}
+  .aat-special-card img{
+    position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;
+  }
+  .aat-special-card::after{
+    content:"";position:absolute;inset:0;z-index:1;
+    background:linear-gradient(180deg,rgba(47,40,51,.06),rgba(47,40,51,.86));
+  }
+  .aat-special-card>*{position:relative;z-index:2;}
+  .aat-special-status{
+    align-self:flex-start;font-size:11px;padding:3px 11px;border-radius:999px;
+    background:rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.4);
+    margin-bottom:auto;
+  }
+  .aat-special-card h3{font-size:17.5px;line-height:1.45;margin-bottom:6px;}
+  .aat-special-card p{font-size:12.5px;opacity:.85;}
+
+  /* ============ 创作者 ============ */
+  .aat-creators{background:#fff;border-top:1px solid var(--aat-line);}
+  .aat-creator-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+  .aat-creator-card{
+    background:linear-gradient(180deg,#fff,var(--aat-paper));
+    border:1px solid var(--aat-line);border-radius:var(--aat-radius);
+    padding:24px 18px;text-align:center;transition:.28s;cursor:pointer;
+  }
+  .aat-creator-card:hover{transform:translateY(-4px);box-shadow:0 16px 30px rgba(143,53,85,.12);border-color:#f2c2d2;}
+  .aat-big-avatar{
+    width:66px;height:66px;border-radius:50%;margin:0 auto 12px;
+    display:grid;place-items:center;font-size:22px;font-weight:700;color:#fff;
+    box-shadow:0 8px 18px rgba(143,53,85,.22);
+  }
+  .aat-creator-card b{font-size:15px;display:block;}
+  .aat-creator-field{
+    display:inline-block;font-size:11.5px;color:var(--aat-rose-deep);
+    background:var(--aat-rose-soft);padding:2px 10px;border-radius:999px;margin:6px 0 10px;
+  }
+  .aat-creator-card p{font-size:12.5px;color:var(--aat-ink-soft);margin-bottom:12px;min-height:56px;}
+  .aat-creator-nums{display:flex;justify-content:center;gap:18px;font-size:12px;color:var(--aat-ink-soft);}
+  .aat-creator-nums b{font-size:13.5px;color:var(--aat-ink);display:block;}
+
+  /* ============ 评价 ============ */
+  .aat-reviews{background:linear-gradient(180deg,var(--aat-paper),#fff);}
+  .aat-review-wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .aat-review{
+    background:#fff;border:1px solid var(--aat-line);border-radius:var(--aat-radius);
+    padding:22px;position:relative;transition:.25s;
+  }
+  .aat-review:hover{box-shadow:0 14px 28px rgba(143,53,85,.1);transform:translateY(-3px);}
+  .aat-review::before{
+    content:"“";position:absolute;top:6px;right:18px;
+    font-size:52px;line-height:1;color:var(--aat-rose-soft);font-family:Georgia,serif;
+  }
+  .aat-review-text{font-size:13.6px;color:#4a4150;margin-bottom:16px;min-height:88px;}
+  .aat-review-user{display:flex;align-items:center;gap:10px;}
+  .aat-review-user b{font-size:13.5px;display:block;}
+  .aat-review-user small{font-size:11.5px;color:var(--aat-ink-soft);}
+  .aat-stars{color:var(--aat-gold);font-size:12px;letter-spacing:1px;}
+
+  /* ============ 动态 / 榜单 ============ */
+  .aat-dynamics{background:#fff;border-top:1px solid var(--aat-line);}
+  .aat-dyn-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:start;}
+  .aat-timeline{position:relative;padding-left:24px;}
+  .aat-timeline::before{
+    content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;
+    background:linear-gradient(var(--aat-rose),var(--aat-lilac));border-radius:2px;
+  }
+  .aat-tl-item{position:relative;padding-bottom:24px;}
+  .aat-tl-item:last-child{padding-bottom:0;}
+  .aat-tl-item::before{
+    content:"";position:absolute;left:-24px;top:7px;width:12px;height:12px;
+    border-radius:50%;background:var(--aat-rose);border:3px solid #fff;
+    box-shadow:0 0 0 2px var(--aat-rose-soft);
+  }
+  .aat-tl-date{font-size:12px;color:var(--aat-rose);font-weight:600;letter-spacing:.5px;}
+  .aat-tl-item h4{font-size:14.8px;margin:3px 0 5px;}
+  .aat-tl-item p{font-size:13px;color:var(--aat-ink-soft);}
+
+  .aat-rank{
+    background:linear-gradient(170deg,#fff,var(--aat-paper));
+    border:1px solid var(--aat-line);border-radius:var(--aat-radius);padding:24px;
+  }
+  .aat-rank h3{font-size:16px;margin-bottom:16px;color:var(--aat-rose-deep);}
+  .aat-rank-item{
+    display:flex;align-items:center;gap:12px;padding:11px 0;
+    border-bottom:1px dashed var(--aat-line);
+  }
+  .aat-rank-item:last-child{border-bottom:none;}
+  .aat-rank-no{
+    width:24px;height:24px;border-radius:8px;flex:none;
+    display:grid;place-items:center;font-size:12px;font-weight:700;
+    background:var(--aat-rose-soft);color:var(--aat-rose-deep);
+  }
+  .aat-rank-item:nth-child(2) .aat-rank-no{background:var(--aat-rose);color:#fff;}
+  .aat-rank-item:nth-child(3) .aat-rank-no{background:#f5c98e;color:#7a4d12;}
+  .aat-rank-item b{font-size:13.5px;flex:1;font-weight:500;}
+  .aat-rank-item small{font-size:11.5px;color:var(--aat-ink-soft);white-space:nowrap;}
+
+  /* ============ FAQ ============ */
+  .aat-faq{background:linear-gradient(180deg,#fff,var(--aat-paper));}
+  .aat-faq-list{max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:12px;}
+  .aat-faq details{
+    background:#fff;border:1px solid var(--aat-line);border-radius:14px;
+    padding:0 20px;transition:.25s;
+  }
+  .aat-faq details[open]{border-color:var(--aat-rose);box-shadow:0 10px 22px rgba(143,53,85,.08);}
+  .aat-faq summary{
+    list-style:none;cursor:pointer;padding:16px 0;
+    font-size:14.5px;font-weight:600;display:flex;justify-content:space-between;align-items:center;gap:12px;
+  }
+  .aat-faq summary::-webkit-details-marker{display:none;}
+  .aat-faq summary::after{
+    content:"+";font-size:20px;color:var(--aat-rose);font-weight:400;transition:.25s;
+  }
+  .aat-faq details[open] summary::after{content:"−";}
+  .aat-faq .aat-faq-body{
+    font-size:13.6px;color:var(--aat-ink-soft);
+    padding-bottom:18px;border-top:1px dashed var(--aat-line);padding-top:12px;
+  }
+
+  /* ============ 联系 ============ */
+  .aat-contact{
+    background:linear-gradient(135deg,var(--aat-rose-deep),var(--aat-rose) 55%,var(--aat-lilac));
+    color:#fff;
+  }
+  .aat-contact-inner{
+    max-width:1200px;margin:0 auto;padding:64px 20px;
+    display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center;
+  }
+  .aat-contact h2{font-size:clamp(23px,3vw,30px);margin-bottom:14px;line-height:1.35;}
+  .aat-contact p{font-size:14.3px;opacity:.9;margin-bottom:22px;max-width:520px;}
+  .aat-contact-actions{display:flex;gap:12px;flex-wrap:wrap;}
+  .aat-contact-btn{
+    background:#fff;color:var(--aat-rose-deep);
+    padding:12px 26px;border-radius:12px;font-size:14px;font-weight:600;transition:.22s;
+  }
+  .aat-contact-btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(0,0,0,.18);}
+  .aat-contact-btn.aat-white-ghost{
+    background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.5);
+  }
+  .aat-contact-info{
+    background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);
+    border-radius:var(--aat-radius);padding:26px;backdrop-filter:blur(6px);
+  }
+  .aat-contact-info h3{font-size:15px;margin-bottom:14px;}
+  .aat-ci-line{
+    display:flex;justify-content:space-between;gap:12px;
+    font-size:13px;padding:9px 0;border-bottom:1px dashed rgba(255,255,255,.25);
+  }
+  .aat-ci-line:last-child{border-bottom:none;}
+  .aat-ci-line span:first-child{opacity:.75;}
+
+  /* ============ 页脚 ============ */
+  .aat-footer{background:#2b2430;color:#cfc5d3;}
+  .aat-footer-inner{
+    max-width:1200px;margin:0 auto;padding:52px 20px 26px;
+    display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:34px;
+  }
+  .aat-footer h4{font-size:14px;color:#fff;margin-bottom:14px;letter-spacing:.5px;}
+  .aat-footer p,.aat-footer li{font-size:12.8px;line-height:2;color:#b6a9bc;}
+  .aat-footer a:hover{color:var(--aat-rose);}
+  .aat-footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+  .aat-footer-brand .aat-logo-mark{box-shadow:none;}
+  .aat-footer-brand b{color:#fff;font-size:15.5px;}
+  .aat-footer-bottom{
+    border-top:1px solid rgba(255,255,255,.1);
+    max-width:1200px;margin:0 auto;padding:18px 20px;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+    font-size:12px;color:#948799;
+  }
+
+  /* ============ 回到顶部 & Toast & 弹窗 ============ */
+  .aat-to-top{
+    position:fixed;right:22px;bottom:26px;width:46px;height:46px;border-radius:14px;
+    background:linear-gradient(135deg,var(--aat-rose),var(--aat-rose-deep));
+    color:#fff;display:grid;place-items:center;font-size:16px;
+    box-shadow:0 10px 24px rgba(143,53,85,.3);z-index:80;
+    opacity:0;pointer-events:none;transform:translateY(10px);transition:.3s;
+  }
+  .aat-to-top.aat-show{opacity:1;pointer-events:auto;transform:none;}
+
+  .aat-toast{
+    position:fixed;left:50%;bottom:40px;transform:translate(-50%,20px);
+    background:rgba(47,40,51,.94);color:#fff;font-size:13.5px;
+    padding:11px 24px;border-radius:999px;z-index:200;
+    opacity:0;pointer-events:none;transition:.3s;white-space:nowrap;
+    box-shadow:0 10px 26px rgba(0,0,0,.24);
+  }
+  .aat-toast.aat-show{opacity:1;transform:translate(-50%,0);}
+
+  .aat-modal-mask{
+    position:fixed;inset:0;background:rgba(47,40,51,.55);z-index:150;
+    display:none;align-items:center;justify-content:center;padding:20px;
+    backdrop-filter:blur(3px);
+  }
+  .aat-modal-mask.aat-open{display:flex;}
+  .aat-modal{
+    background:#fff;border-radius:20px;max-width:520px;width:100%;
+    padding:30px 28px;position:relative;max-height:86vh;overflow:auto;
+    box-shadow:0 30px 60px rgba(0,0,0,.3);
+    animation:aatPop .3s ease;
+  }
+  @keyframes aatPop{from{transform:translateY(20px) scale(.97);opacity:0;}to{transform:none;opacity:1;}}
+  .aat-modal h3{font-size:19px;margin-bottom:8px;color:var(--aat-rose-deep);}
+  .aat-modal .aat-modal-sub{font-size:13px;color:var(--aat-ink-soft);margin-bottom:20px;}
+  .aat-modal label{font-size:13px;font-weight:600;display:block;margin:14px 0 6px;}
+  .aat-modal input,.aat-modal textarea,.aat-modal select{
+    width:100%;border:1px solid var(--aat-line);border-radius:10px;
+    padding:10px 14px;font-size:13.5px;font-family:inherit;outline:none;
+    background:var(--aat-paper);transition:.22s;resize:vertical;
+  }
+  .aat-modal input:focus,.aat-modal textarea:focus,.aat-modal select:focus{
+    border-color:var(--aat-rose);box-shadow:0 0 0 3px rgba(194,85,122,.12);background:#fff;
+  }
+  .aat-modal-close{
+    position:absolute;top:16px;right:18px;width:32px;height:32px;border-radius:50%;
+    background:var(--aat-paper);color:var(--aat-ink-soft);font-size:16px;
+    display:grid;place-items:center;transition:.2s;
+  }
+  .aat-modal-close:hover{background:var(--aat-rose-soft);color:var(--aat-rose-deep);}
+  .aat-modal-submit{
+    margin-top:22px;width:100%;
+    background:linear-gradient(135deg,var(--aat-rose),var(--aat-rose-deep));
+    color:#fff;padding:12px;border-radius:12px;font-size:14.5px;font-weight:600;
+    transition:.22s;
+  }
+  .aat-modal-submit:hover{box-shadow:0 10px 22px rgba(194,85,122,.32);}
+  .aat-share-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px;}
+  .aat-share-item{
+    background:var(--aat-paper);border:1px solid var(--aat-line);border-radius:14px;
+    padding:18px 10px;text-align:center;font-size:13px;transition:.22s;
+  }
+  .aat-share-item:hover{border-color:var(--aat-rose);background:var(--aat-rose-soft);color:var(--aat-rose-deep);}
+  .aat-share-item b{display:block;font-size:18px;margin-bottom:6px;}
+
+  /* ============ 响应式 ============ */
+  @media (max-width:1024px){
+    .aat-hero-inner{grid-template-columns:1fr;gap:44px;}
+    .aat-hero-visual{max-width:560px;}
+    .aat-about-grid{grid-template-columns:1fr;gap:30px;}
+    .aat-about-aside{position:static;}
+    .aat-focus-grid{grid-template-columns:1fr;}
+    .aat-focus-side{grid-template-rows:none;grid-template-columns:1fr 1fr;}
+    .aat-video-grid{grid-template-columns:repeat(2,1fr);}
+    .aat-special-grid{grid-template-columns:1fr 1fr;}
+    .aat-creator-grid{grid-template-columns:repeat(2,1fr);}
+    .aat-review-wrap{grid-template-columns:1fr 1fr;}
+    .aat-dyn-grid{grid-template-columns:1fr;gap:30px;}
+    .aat-contact-inner{grid-template-columns:1fr;gap:30px;}
+    .aat-footer-inner{grid-template-columns:1fr 1fr;gap:26px;}
+    .aat-nav{
+      display:none;position:absolute;top:100%;left:0;right:0;
+      background:#fff;border-bottom:1px solid var(--aat-line);
+      box-shadow:0 16px 30px rgba(143,53,85,.12);padding:10px;
+    }
+    .aat-nav.aat-open{display:block;}
+    .aat-nav ul{flex-direction:column;gap:2px;}
+    .aat-nav a{padding:12px 14px;}
+    .aat-header-inner{position:relative;flex-wrap:nowrap;}
+    .aat-header-inner{justify-content:space-between;}
+    .aat-search-box input{width:96px;}
+    .aat-burger{display:grid;}
+    .aat-header-cta{display:none;}
+  }
+  @media (max-width:640px){
+    .aat-section{padding:48px 16px;}
+    .aat-hero-inner{padding:38px 16px 46px;gap:34px;}
+    .aat-hero-stats{gap:8px;}
+    .aat-stat-num{font-size:21px;}
+    .aat-hero-float{left:auto;right:10px;bottom:-18px;padding:10px 14px;max-width:220px;}
+    .aat-hero-float small{font-size:10.5px;}
+    .aat-hero-actions{gap:10px;}
+    .aat-btn-primary,.aat-btn-ghost{padding:11px 20px;font-size:13.5px;}
+    .aat-focus-side{grid-template-columns:1fr;}
+    .aat-video-grid{grid-template-columns:1fr;}
+    .aat-special-grid{grid-template-columns:1fr;}
+    .aat-creator-grid{grid-template-columns:1fr;}
+    .aat-review-wrap{grid-template-columns:1fr;}
+    .aat-footer-inner{grid-template-columns:1fr;gap:24px;}
+    .aat-search-box{display:none;}
+    .aat-header-inner{height:60px;gap:14px;}
+    .aat-logo-mark{width:36px;height:36px;font-size:15px;}
+    .aat-notice-inner{font-size:12px;}
+    .aat-notice-more{display:none;}
+    .aat-modal{padding:24px 20px;}
+    .aat-share-row{grid-template-columns:1fr;}
+    .aat-hero-cover .aat-cover-tag{font-size:11px;}
+  }
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶：公告条 + 页头 -->
+<div class="aat-sticky-wrap">
+  <div class="aat-notice-bar">
+    <div class="aat-notice-inner">
+      <span class="aat-notice-tag">官方发布</span>
+      <div class="aat-notice-track">
+        <span>11月19日更新：家庭教育专题《陪伴的 100 种方式》第三季上线，新增 6 集原创影像；安安老师年度答谢直播预约通道已开启。</span>
+      </div>
+      <a class="aat-notice-more" href="#aat-special">查看详情</a>
+    </div>
+  </div>
+
+  <header class="aat-header">
+    <div class="aat-header-inner">
+      <a class="aat-logo" href="#aat-top" aria-label="安安老师官方视频站首页">
+        <div class="aat-logo-mark">安</div>
+        <div class="aat-logo-text">
+          <b>安安老师</b>
+          <small>官方视频品牌站</small>
+        </div>
+      </a>
+
+      <nav class="aat-nav" id="aatMainNav">
+        <ul>
+          <li><a href="#aat-top" class="aat-active">首页</a></li>
+          <li><a href="#aat-focus">焦点影像</a></li>
+          <li><a href="#aat-stream">视频内容</a></li>
+          <li><a href="#aat-special">专题企划</a></li>
+          <li><a href="#aat-creators">创作者</a></li>
+          <li><a href="#aat-dynamics">品牌动态</a></li>
+          <li><a href="#aat-faq">帮助</a></li>
+          <li><a href="#aat-contact">联系</a></li>
+        </ul>
+      </nav>
+
+      <div class="aat-header-tools">
+        <div class="aat-search-wrap">
+          <div class="aat-search-box">
+            <input type="text" id="aatSearchInput" placeholder="搜索亲子 / 情绪 / 习惯养成" aria-label="站内搜索">
+            <button class="aat-search-btn" id="aatSearchBtn" aria-label="搜索">⌕</button>
+          </div>
+          <div class="aat-search-hint" id="aatSearchHint"></div>
+        </div>
+        <button class="aat-header-cta" data-modal="aatSubmitModal">投稿入口</button>
+        <button class="aat-burger" id="aatBurger" aria-label="展开导航" aria-expanded="false">
+          <div><span></span><span></span><span></span></div>
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<!-- 首屏 -->
+<section class="aat-hero" id="aat-top">
+  <div class="aat-hero-inner">
+    <div class="aat-hero-copy">
+      <div class="aat-hero-badge"><i></i>官方网站 · 深耕家庭教育影像九年</div>
+      <h1>安安老师</h1>
+      <p class="aat-hero-slogan">用真实的镜头，陪伴每一个家庭慢慢长大</p>
+      <p class="aat-hero-desc">
+        作为国内专注亲子成长与家庭教育的视频品牌，安安老师官方网站以原创、正版、高清的内容为核心，为家长与创作者搭建一个温暖、专业、可持续的内容生态。我们记录真实的教育现场，分享经过验证的方法，也收藏那些不够完美却足够动人的成长瞬间。这里既不贩卖焦虑，也不提供速成答案，只希望每个家庭都能找到属于自己的节奏。
+      </p>
+      <div class="aat-hero-actions">
+        <a class="aat-btn-primary" href="#aat-stream">浏览精品内容</a>
+        <a class="aat-btn-ghost" href="#aat-about">了解品牌故事</a>
+        <button class="aat-btn-ghost" data-modal="aatSubmitModal">我要投稿</button>
+      </div>
+      <div class="aat-hero-stats">
+        <div>
+          <div class="aat-stat-num" data-count="1280">0<small>+</small></div>
+          <div class="aat-stat-label">原创影像作品</div>
+        </div>
+        <div>
+          <div class="aat-stat-num" data-count="86">0<small>万</small></div>
+          <div class="aat-stat-label">社区家庭用户</div>
+        </div>
+        <div>
+          <div class="aat-stat-num" data-count="320">0<small>位</small></div>
+          <div class="aat-stat-label">签约创作者</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="aat-hero-visual">
+      <div class="aat-hero-cover">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 620'%3E%3Cdefs%3E%3ClinearGradient id='bg1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f9e3ea'/%3E%3Cstop offset='1' stop-color='%23e6d8ef'/%3E%3C/linearGradient%3E%3ClinearGradient id='sun1' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23f6b8c9'/%3E%3Cstop offset='1' stop-color='%23c2557a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='620' fill='url(%23bg1)'/%3E%3Ccircle cx='620' cy='150' r='96' fill='url(%23sun1)' opacity='.72'/%3E%3Cpath d='M0 460 Q200 380 400 440 T800 420 L800 620 L0 620 Z' fill='%23f7d2de' opacity='.85'/%3E%3Cpath d='M0 520 Q220 470 430 510 T800 490 L800 620 L0 620 Z' fill='%23ffffff' opacity='.55'/%3E%3Cg%3E%3Ccircle cx='300' cy='330' r='54' fill='%23fbeef2'/%3E%3Cpath d='M228 500c0-46 32-82 72-82s72 36 72 82z' fill='%238f3555'/%3E%3Ccircle cx='300' cy='316' r='40' fill='%23c2557a'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='470' cy='372' r='38' fill='%23fbeef2'/%3E%3Cpath d='M420 500c0-32 22-58 50-58s50 26 50 58z' fill='%237d6a9c'/%3E%3Ccircle cx='470' cy='362' r='28' fill='%23a08cb8'/%3E%3C/g%3E%3Cg opacity='.7'%3E%3Crect x='120' y='180' width='60' height='8' rx='4' fill='%23ffffff'/%3E%3Crect x='120' y='200' width='96' height='8' rx='4' fill='%23ffffff'/%3E%3Crect x='120' y='220' width='76' height='8' rx='4' fill='%23ffffff'/%3E%3C/g%3E%3Ctext x='400' y='588' font-family='sans-serif' font-size='22' fill='%238f3555' text-anchor='middle' letter-spacing='6'%3E陪伴 · 记录 · 成长%3C/text%3E%3C/svg%3E" alt="安安老师品牌主视觉：暮色中的家庭剪影与陪伴主题插画">
+        <span class="aat-cover-tag">品牌主视觉</span>
+      </div>
+      <div class="aat-hero-float">
+        <div class="aat-avatar">安</div>
+        <div>
+          <b>安安老师 · 主理人</b>
+          <small>本周更新 3 期｜内容生态持续运营</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 品牌解析长文 -->
+<section class="aat-about" id="aat-about">
+  <div class="aat-section">
+    <div class="aat-about-grid">
+      <aside class="aat-about-aside">
+        <h3>关于安安老师</h3>
+        <p>我们相信，好的教育内容不是标准答案，而是让人愿意停下来、慢一点、再想一想的那束光。</p>
+        <div class="aat-tagcloud">
+          <span>亲子成长</span>
+          <span>情绪支持</span>
+          <span>习惯养成</span>
+          <span>家庭教育</span>
+          <span>原创影像</span>
+          <span>创作者社区</span>
+          <span>品牌故事</span>
+        </div>
+      </aside>
+
+      <div class="aat-about-body">
+        <h2>从一间小小的书房，到一座持续生长的内容生态</h2>
+        <p>安安老师这个品牌，最初诞生于一间不足十平方米的书房。主理人安安老师曾是一名一线教育工作者，九年前，她开始用手机记录课堂上那些真实发生的瞬间：一个孩子因为被理解而突然亮起来的眼神，一位家长在家长会后悄悄抹掉的眼泪，还有那些说不清道理、却让人心里一热的日常片段。这些画面被她剪成三分钟的小片，发在社区里，没想到收到了大量留言——原来有那么多家庭，在同样的困惑里努力着。</p>
+        <p>于是，一个以视频为载体的家庭教育品牌逐渐成形。安安老师官方网站作为品牌的官方门户，承载的不只是作品陈列，更是一个开放、包容、持续运营的内容社区。我们把内容分为三条主线：一是「看见孩子」，聚焦儿童心理、情绪表达与行为理解；二是「看见自己」，关注父母的自我成长与家庭关系；三是「看见生活」，记录那些平凡却值得被珍藏的家庭日常。</p>
+
+        <h3>关键词定位与内容解析</h3>
+        <p>在家庭教育内容领域，信息从来不缺，缺的是被认真对待的真实经验。安安老师的内容策略，是把“经验”重新变成“样本”——每一期视频都来自真实的家庭场景、可复现的沟通方法、可讨论的价值观，而非悬浮的情绪口号。我们坚持原创、正版、高清的制作标准，从选题、拍摄、剪辑到内容审核，形成了完整的品质流程。这也是我们能在行业里积累口碑、成为许多家庭用户首选的底层原因。</p>
+        <p>我们并不把自己定义为课堂。视频是媒介，社区才是归宿。创作者在这里投稿、交流、互相校对；家长在这里提问、分享、获得陪伴；研究者与一线教师在专题企划中贡献专业视角。这种多元、真实的内容生态，是品牌最看重的资产，也是我们长期深耕垂直领域的方向所在。</p>
+
+        <h3>关于创作者的培养</h3>
+        <p>一个健康的视频品牌，不能只靠单一的创作者发声。安安老师建立了相对完整的创作者成长体系：新人可以通过投稿入口提交作品，通过初审后进入社群，参与每月一次的创作挑战与选题共创；表现突出者进入签约计划，获得拍摄指导、剪辑支持与流量扶持。我们鼓励创作者记录自己真实的生活，而不是模仿一种被算法验证过的腔调。因为最终打动人的，从来都是那些带着体温的细节。</p>
+
+        <h3>社会责任与长期主义</h3>
+        <p>作为一家持续运营的企业，我们始终认为家庭教育内容需要克制。不贩卖焦虑、不制造对立、不承诺速成，是我们给自己定的底线。近两年，品牌联合多位心理教师与社区工作者，推出了面向乡村家庭的公益影像项目，把优质内容以更简单的方式送到需要的家庭手中。这件事做起来很慢，但我们愿意一直做下去。</p>
+        <p>未来，安安老师官方网站会继续以品牌故事、企业动态、精品内容和创作者社区为四个支点，让更多家庭在这里找到真实的力量与温暖的陪伴。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 焦点影像 -->
+<section class="aat-focus" id="aat-focus">
+  <div class="aat-section">
+    <div class="aat-section-head">
+      <span class="aat-eyebrow">焦点影像</span>
+      <h2>本周内容精选 · 值得完整看完的四部作品</h2>
+      <p>由品牌内容团队与签约创作者共同推选，覆盖情绪支持、习惯养成、家庭对话与城市家庭记录四个方向。</p>
+    </div>
+
+    <div class="aat-focus-grid">
+      <div class="aat-focus-main" data-toast="已打开《当孩子说“我不想说”》详情节页">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232f2833'/%3E%3Cstop offset='1' stop-color='%235c4152'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='500' fill='url(%23f1)'/%3E%3Ccircle cx='620' cy='120' r='160' fill='%23c2557a' opacity='.28'/%3E%3Ccircle cx='180' cy='380' r='120' fill='%237d6a9c' opacity='.3'/%3E%3Cg%3E%3Crect x='330' y='220' width='140' height='190' rx='14' fill='%23fbeef2' opacity='.9'/%3E%3Ccircle cx='400' cy='190' r='42' fill='%23f7d2de'/%3E%3Cpath d='M360 300h80M360 330h60M360 360h70' stroke='%23c2557a' stroke-width='7' stroke-linecap='round'/%3E%3C/g%3E%3Ccircle cx='400' cy='250' r='238' fill='none' stroke='%23c2557a' stroke-width='1.5' opacity='.4'/%3E%3Ctext x='400' y='460' font-family='sans-serif' font-size='17' fill='%23fbeef2' text-anchor='middle' letter-spacing='4'%3E情绪 · 沟通 · 理解%3C/text%3E%3C/svg%3E" alt="焦点视频《当孩子说我不想说》封面，父母与孩子沟通场景插画">
+        <div class="aat-focus-overlay">
+          <span class="aat-kicker">焦点推荐 · 情绪支持</span>
+          <h3>当孩子说“我不想说”，我们还能做什么</h3>
+          <p>在一段被拒绝的对话里，成年人往往先着急。这期影像用三个真实家庭片段，重新理解沉默背后的信任。</p>
+          <div class="aat-focus-meta">
+            <span>安安老师 · 品牌原创</span>
+            <span>时长 18:42</span>
+            <span>播放 4.2 万</span>
+            <span>收藏 3,180</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="aat-focus-side">
+        <article class="aat-mini-card" data-toast="已打开《一节课的时间管理课》详情节页">
+          <div class="aat-mini-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23f7efe2'/%3E%3Ccircle cx='255' cy='55' r='58' fill='%23e8b86b' opacity='.55'/%3E%3Crect x='38' y='70' width='130' height='92' rx='10' fill='%23c2557a'/%3E%3Crect x='54' y='86' width='98' height='8' rx='4' fill='%23fdeef2'/%3E%3Crect x='54' y='104' width='72' height='8' rx='4' fill='%23fdeef2' opacity='.75'/%3E%3Crect x='54' y='122' width='86' height='8' rx='4' fill='%23fdeef2' opacity='.55'/%3E%3C/svg%3E" alt="《一节课的时间管理课》封面，书本与时钟组合插画">
+            <span class="aat-play-dot">▶</span>
+          </div>
+          <div class="aat-mini-info">
+            <b>一节课的时间管理课：从睡前半小时开始</b>
+            <small>实用技巧 · 12:06 · 安安老师</small>
+          </div>
+        </article>
+
+        <article class="aat-mini-card" data-toast="已打开《厨房里的自然课》详情节页">
+          <div class="aat-mini-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23e7f0e6'/%3E%3Ccircle cx='80' cy='120' r='62' fill='%238fb88a' opacity='.6'/%3E%3Cpath d='M170 150c10-40 34-60 70-64-6 36-28 60-70 64z' fill='%234f7d55'/%3E%3Crect x='196' y='60' width='80' height='52' rx='8' fill='%23fdf8fa'/%3E%3Crect x='210' y='76' width='52' height='6' rx='3' fill='%238fb88a'/%3E%3Crect x='210' y='90' width='38' height='6' rx='3' fill='%238fb88a' opacity='.65'/%3E%3C/svg%3E" alt="《厨房里的自然课》封面，蔬菜叶片与料理卡片插画">
+            <span class="aat-play-dot">▶</span>
+          </div>
+          <div class="aat-mini-info">
+            <b>厨房里的自然课：让孩子认识一片叶子</b>
+            <small>亲子成长 · 09:34 · 温禾老师</small>
+          </div>
+        </article>
+
+        <article class="aat-mini-card" data-toast="已打开《父亲的二十个问题》详情节页">
+          <div class="aat-mini-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23dfe7f2'/%3E%3Ccircle cx='160' cy='150' r='70' fill='%237d8fb5' opacity='.55'/%3E%3Ccircle cx='160' cy='86' r='34' fill='%23fdf8fa'/%3E%3Cpath d='M118 200c0-30 19-52 42-52s42 22 42 52z' fill='%233c4a68'/%3E%3Ctext x='258' y='60' font-family='sans-serif' font-size='52' fill='%237d8fb5' opacity='.5'%3E%3F%3C/text%3E%3C/svg%3E" alt="《父亲的二十个问题》封面，父亲与孩子对话剪影插画">
+            <span class="aat-play-dot">▶</span>
+          </div>
+          <div class="aat-mini-info">
+            <b>父亲的二十个问题：一个家庭对话实验</b>
+            <small>人物访谈 · 16:20 · 林舟</small>
+          </div>
+        </article>
+
+        <article class="aat-mini-card" data-toast="已打开《慢一点，也来得及》详情节页">
+          <div class="aat-mini-thumb">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23f6e4ea'/%3E%3Cpath d='M0 150 Q80 110 160 140 T320 130 L320 200 L0 200 Z' fill='%23c2557a' opacity='.5'/%3E%3Ccircle cx='84' cy='72' r='30' fill='%238f3555' opacity='.7'/%3E%3Crect x='150' y='58' width='130' height='9' rx='4' fill='%238f3555' opacity='.4'/%3E%3Crect x='150' y='80' width='96' height='9' rx='4' fill='%238f3555' opacity='.28'/%3E%3Crect x='150' y='102' width='112' height='9' rx='4' fill='%238f3555' opacity='.18'/%3E%3C/svg%3E" alt="《慢一点也来得及》封面，暖色渐变与文字排版插画">
+            <span class="aat-play-dot">▶</span>
+          </div>
+          <div class="aat-mini-info">
+            <b>慢一点，也来得及：写给焦虑父母的一封信</b>
+            <small>治愈影像 · 07:58 · 安安老师</small>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 视频内容流 -->
+<section class="aat-stream" id="aat-stream">
+  <div class="aat-section">
+    <div class="aat-section-head">
+      <span class="aat-eyebrow">视频内容</span>
+      <h2>精品内容库 · 每一期都来自真实家庭现场</h2>
+      <p>按主题筛选你想看的方向，所有内容均为安安老师官方发布或签约创作者原创。</p>
+    </div>
+
+    <div class="aat-filter-bar" id="aatFilterBar">
+      <button class="aat-chip aat-on" data-filter="all">全部</button>
+      <button class="aat-chip" data-filter="emotion">情绪支持</button>
+      <button class="aat-chip" data-filter="habit">习惯养成</button>
+      <button class="aat-chip" data-filter="city">城市家庭</button>
+      <button class="aat-chip" data-filter="skill">实用技巧</button>
+      <button class="aat-chip" data-filter="story">人物故事</button>
+    </div>
+
+    <div class="aat-video-grid" id="aatVideoGrid">
+
+      <article class="aat-vcard" data-cat="emotion">
+        <div class="aat-vcover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23f3dde4'/%3E%3Ccircle cx='320' cy='50' r='70' fill='%23e3b7c6' opacity='.8'/%3E%3Ccircle cx='120' cy='112' r='40' fill='%23c2557a'/%3E%3Cpath d='M60 225c0-36 27-64 60-64s60 28 60 64z' fill='%238f3555'/%3E%3Crect x='230' y='90' width='120' height='10' rx='5' fill='%238f3555' opacity='.4'/%3E%3Crect x='230' y='112' width='90' height='10' rx='5' fill='%238f3555' opacity='.28'/%3E%3Crect x='230' y='134' width='104' height='10' rx='5' fill='%238f3555' opacity='.18'/%3E%3C/svg%3E" alt="视频《孩子发脾气时，先别急着讲道理》封面，情绪主题人物剪影">
+          <span class="aat-vlabel">情绪支持</span>
+          <span class="aat-duration">14:05</span>
+        </div>
+        <div class="aat-vbody">
+          <h3>孩子发脾气时，先别急着讲道理</h3>
+          <p>三个家庭真实片段拆解：当情绪先于语言到达，成年人可以怎么接住。</p>
+          <div class="aat-vmeta">
+            <div class="aat-author-line">
+              <span class="aat-mini-avatar" style="background:#c2557a;">安</span>
+              <span>安安老师</span>
+            </div>
+            <div class="aat-vactions">
+              <button class="aat-icon-btn" data-like>♥ <em>1,286</em></button>
+              <button class="aat-icon-btn" data-save>☆</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="aat-vcard" data-cat="habit">
+        <div class="aat-vcover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23f7efe0'/%3E%3Crect x='50' y='60' width='150' height='110' rx='12' fill='%23e8b86b'/%3E%3Crect x='70' y='82' width='110' height='9' rx='4' fill='%23fdf8fa'/%3E%3Crect x='70' y='102' width='80' height='9' rx='4' fill='%23fdf8fa' opacity='.7'/%3E%3Ccircle cx='300' cy='112' r='54' fill='none' stroke='%23c98a3e' stroke-width='10'/%3E%3Cpath d='M300 112 L300 78' stroke='%23c98a3e' stroke-width='7' stroke-linecap='round'/%3E%3Cpath d='M300 112 L326 128' stroke='%23c98a3e' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E" alt="视频《一节课的时间管理课》封面，纸张与时钟插画">
+          <span class="aat-vlabel">习惯养成</span>
+          <span class="aat-duration">12:06</span>
+        </div>
+        <div class="aat-vbody">
+          <h3>一节课的时间管理课：从睡前半小时开始</h3>
+          <p>不谈意志力，只谈环境设计。三步调整孩子的晚间节奏。</p>
+          <div class="aat-vmeta">
+            <div class="aat-author-line">
+              <span class="aat-mini-avatar" style="background:#c98a3e;">方</span>
+              <span>方老师</span>
+            </div>
+            <div class="aat-vactions">
+              <button class="aat-icon-btn" data-like>♥ <em>948</em></button>
+              <button class="aat-icon-btn" data-save>☆</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="aat-vcard" data-cat="city">
+        <div class="aat-vcover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23dde6f0'/%3E%3Cpath d='M0 190 L80 150 L160 175 L240 130 L320 165 L400 140 L400 225 L0 225 Z' fill='%237d8fb5' opacity='.6'/%3E%3Crect x='120' y='60' width='28' height='110' fill='%233c4a68' opacity='.8'/%3E%3Crect x='170' y='90' width='24' height='80' fill='%233c4a68' opacity='.6'/%3E%3Crect x='220' y='45' width='30' height='125' fill='%233c4a68' opacity='.85'/%3E%3Ccircle cx='320' cy='55' r='26' fill='%23fdf8fa' opacity='.8'/%3E%3C/svg%3E" alt="视频《放学后的城市路线》封面，城市建筑天际线插画">
+          <span class="aat-vlabel">城市家庭</span>
+          <span class="aat-duration">11:22</span>
+        </div>
+        <div class="aat-vbody">
+          <h3>放学后的城市路线：一个四年级孩子的独立练习</h3>
+          <p>从家到学校，三条路，四种选择。记录一次关于信任的小小放手。</p>
+          <div class="aat-vmeta">
+            <div class="aat-author-line">
+              <span class="aat-mini-avatar" style="background:#5c7396;">舟</span>
+              <span>林舟</span>
+            </div>
+            <div class="aat-vactions">
+              <button class="aat-icon-btn" data-like>♥ <em>712</em></button>
+              <button class="aat-icon-btn" data-save>☆</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="aat-vcard" data-cat="skill">
+        <div class="aat-vcover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23e9e2f2'/%3E%3Crect x='58' y='52' width='180' height='122' rx='10' fill='%23fdf8fa'/%3E%3Crect x='76' y='74' width='120' height='9' rx='4' fill='%237d6a9c'/%3E%3Crect x='76' y='94' width='90' height='9' rx='4' fill='%237d6a9c' opacity='.6'/%3E%3Crect x='76' y='114' width='104' height='9' rx='4' fill='%237d6a9c' opacity='.4'/%3E%3Ccircle cx='300' cy='112' r='46' fill='%237d6a9c' opacity='.65'/%3E%3Cpath d='M284 112 L296 124 L318 98' stroke='%23fdf8fa' stroke-width='7' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" alt="视频《一个提问公式》封面，纸笔与勾选图标插画">
+          <span class="aat-vlabel">实用技巧</span>
+          <span class="aat-duration">08:47</span>
+        </div>
+        <div class="aat-vbody">
+          <h3>一个提问公式，让家庭对话不再变成审问</h3>
+          <p>把“今天怎么样”换成三种具体问法，孩子的回答会明显变长。</p>
+          <div class="aat-vmeta">
+            <div class="aat-author-line">
+              <span class="aat-mini-avatar" style="background:#7d6a9c;">宁</span>
+              <span>沈宁</span>
+            </div>
+            <div class="aat-vactions">
+              <button class="aat-icon-btn" data-like>♥ <em>1,540</em></button>
+              <button class="aat-icon-btn" data-save>☆</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="aat-vcard" data-cat="story">
+        <div class="aat-vcover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23f5e6d8'/%3E%3Ccircle cx='130' cy='90' r='38' fill='%23b5713f'/%3E%3Cpath d='M76 225c0-32 24-58 54-58s54 26 54 58z' fill='%237a4a22'/%3E%3Crect x='228' y='70' width='120' height='12' rx='6' fill='%237a4a22' opacity='.4'/%3E%3Crect x='228' y='96' width='88' height='12' rx='6' fill='%237a4a22' opacity='.28'/%3E%3Crect x='228' y='122' width='104' height='12' rx='6' fill='%237a4a22' opacity='.18'/%3E%3C/svg%3E" alt="视频《父亲的二十个问题》封面，人物肖像与文字排版插画">
+          <span class="aat-vlabel">人物故事</span>
+          <span class="aat-duration">16:20</span>
+        </div>
+        <div class="aat-vbody">
+          <h3>父亲的二十个问题：一个家庭对话实验</h3>
+          <p>一位父亲用三个月记录下和女儿的二十次夜谈，其中有九次以沉默结束。</p>
+          <div class="aat-vmeta">
+            <div class="aat-author-line">
+              <span class="aat-mini-avatar" style="background:#b5713f;">林</span>
+              <span>林舟</span>
+            </div>
+            <div class="aat-vactions">
+              <button class="aat-icon-btn" data-like>♥ <em>2,036</em></button>
+              <button class="aat-icon-btn" data-save>☆</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="aat-vcard" data-cat="emotion">
+        <div class="aat-vcover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23dfe8e2'/%3E%3Cpath d='M0 160 Q100 120 200 150 T400 140 L400 225 L0 225 Z' fill='%238fb88a' opacity='.65'/%3E%3Ccircle cx='290' cy='62' r='34' fill='%23fdf8fa' opacity='.85'/%3E%3Cpath d='M120 150c14-28 44-40 68-26 10-24 44-26 56-4' stroke='%234f7d55' stroke-width='8' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" alt="视频《允许孩子哭》封面，自然绿与柔和曲线插画">
+          <span class="aat-vlabel">情绪支持</span>
+          <span class="aat-duration">10:18</span>
+        </div>
+        <div class="aat-vbody">
+          <h3>允许孩子哭：把眼泪当作一种语言</h3>
+          <p>不急于止哭，也不过度回应。一次关于情绪容纳能力的讨论与示范。</p>
+          <div class="aat-vmeta">
+            <div class="aat-author-line">
+              <span class="aat-mini-avatar" style="background:#5b8a5a;">温</span>
+              <span>温禾老师</span>
+            </div>
+            <div class="aat-vactions">
+              <button class="aat-icon-btn" data-like>♥ <em>1,102</em></button>
+              <button class="aat-icon-btn" data-save>☆</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 专题企划 -->
+<section class="aat-special" id="aat-special">
+  <div class="aat-section">
+    <div class="aat-section-head">
+      <span class="aat-eyebrow">专题企划</span>
+      <h2>系列内容 · 把零散的经验连成一张地图</h2>
+      <p>每个专题由品牌内容团队策划，联合一线教师、心理工作者与社区创作者共同完成。</p>
+    </div>
+
+    <div class="aat-special-grid">
+      <article class="aat-special-card" data-toast="已进入专题《陪伴的 100 种方式》">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%23c2557a'/%3E%3Ccircle cx='480' cy='90' r='130' fill='%23f7dbe4' opacity='.3'/%3E%3Ccircle cx='130' cy='320' r='100' fill='%238f3555' opacity='.5'/%3E%3Ctext x='300' y='215' font-family='sans-serif' font-size='46' fill='%23fdf8fa' text-anchor='middle' letter-spacing='4'%3E陪伴%3C/text%3E%3Ctext x='300' y='262' font-family='sans-serif' font-size='18' fill='%23f7dbe4' text-anchor='middle' letter-spacing='6'%3E100 种方式%3C/text%3E%3C/svg%3E" alt="专题《陪伴的100种方式》封面，玫红色陪伴主题大字排版">
+        <span class="aat-special-status">更新中 · 已上线 18 集</span>
+        <h3>陪伴的 100 种方式</h3>
+        <p>从睡前十分钟到周末的一次散步，收集普通家庭里可执行的陪伴样本。</p>
+      </article>
+
+      <article class="aat-special-card" data-toast="已进入专题《城市里的自然课》">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%234f7d55'/%3E%3Cpath d='M0 300 Q150 240 300 290 T600 270 L600 400 L0 400 Z' fill='%238fb88a' opacity='.6'/%3E%3Ccircle cx='470' cy='100' r='70' fill='%23e9e2f2' opacity='.35'/%3E%3Cpath d='M120 260c30-60 90-80 130-46' stroke='%23fdf8fa' stroke-width='9' fill='none' stroke-linecap='round'/%3E%3Ctext x='300' y='360' font-family='sans-serif' font-size='26' fill='%23fdf8fa' text-anchor='middle' letter-spacing='4'%3E城市里的自然课%3C/text%3E%3C/svg%3E" alt="专题《城市里的自然课》封面，自然绿与叶片曲线插画">
+        <span class="aat-special-status">已完结 · 共 12 集</span>
+        <h3>城市里的自然课</h3>
+        <p>在水泥森林里重新认识四季，带孩子用感官丈量身边的小世界。</p>
+      </article>
+
+      <article class="aat-special-card" data-toast="已进入专题《写给孩子的一封信》">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%237d6a9c'/%3E%3Crect x='160' y='120' width='280' height='180' rx='14' fill='%23fdf8fa' opacity='.9'/%3E%3Cpath d='M160 120 L300 230 L440 120' stroke='%237d6a9c' stroke-width='10' fill='none' stroke-linejoin='round'/%3E%3Crect x='200' y='270' width='120' height='9' rx='4' fill='%237d6a9c' opacity='.5'/%3E%3Ctext x='300' y='360' font-family='sans-serif' font-size='24' fill='%23e9e2f2' text-anchor='middle' letter-spacing='3'%3E写给孩子的信%3C/text%3E%3C/svg%3E" alt="专题《写给孩子的一封信》封面，信封与文字插画">
+        <span class="aat-special-status">连载中 · 每月 1 期</span>
+        <h3>写给孩子的一封信</h3>
+        <p>邀请不同职业的父母写一封信，再由孩子朗读出来。安静，但很有力量。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 创作者矩阵 -->
+<section class="aat-creators" id="aat-creators">
+  <div class="aat-section">
+    <div class="aat-section-head">
+      <span class="aat-eyebrow">创作者</span>
+      <h2>内容生态的中坚力量 · 签约与推荐创作者</h2>
+      <p>他们来自教育、心理学、纪录片与普通家庭，用各自的视角记录真实的成长现场。</p>
+    </div>
+
+    <div class="aat-creator-grid">
+      <article class="aat-creator-card" data-author="安安老师">
+        <div class="aat-big-avatar" style="background:linear-gradient(135deg,#c2557a,#8f3555);">安</div>
+        <b>安安老师</b>
+        <span class="aat-creator-field">品牌主理人 / 家庭教育</span>
+        <p>九年一线教育经历，擅长把复杂的儿童心理讲成可以听懂的故事。</p>
+        <div class="aat-creator-nums">
+          <div><b>326</b>作品</div>
+          <div><b>32.4万</b>关注</div>
+        </div>
+      </article>
+
+      <article class="aat-creator-card" data-author="温禾老师">
+        <div class="aat-big-avatar" style="background:linear-gradient(135deg,#5b8a5a,#3d663c);">温</div>
+        <b>温禾老师</b>
+        <span class="aat-creator-field">儿童心理 / 自然教育</span>
+        <p>把自然当成课堂的人。镜头里常见的是叶子、水和孩子的眼睛。</p>
+        <div class="aat-creator-nums">
+          <div><b>142</b>作品</div>
+          <div><b>18.6万</b>关注</div>
+        </div>
+      </article>
+
+      <article class="aat-creator-card" data-author="林舟">
+        <div class="aat-big-avatar" style="background:linear-gradient(135deg,#b5713f,#7a4a22);">林</div>
+        <b>林舟</b>
+        <span class="aat-creator-field">人物访谈 / 城市记录</span>
+        <p>纪录片导演出身，喜欢在陌生的街区里找熟悉的家庭故事。</p>
+        <div class="aat-creator-nums">
+          <div><b>87</b>作品</div>
+          <div><b>12.1万</b>关注</div>
+        </div>
+      </article>
+
+      <article class="aat-creator-card" data-author="沈宁">
+        <div class="aat-big-avatar" style="background:linear-gradient(135deg,#7d6a9c,#544472);">宁</div>
+        <b>沈宁</b>
+        <span class="aat-creator-field">实用技巧 / 学习方法</span>
+        <p>擅长把方法论压缩成一张卡片，看完就能用在今晚的饭桌上。</p>
+        <div class="aat-creator-nums">
+          <div><b>118</b>作品</div>
+          <div><b>21.3万</b>关注</div>
+        </div>
+      </article>
+
+      <article class="aat-creator-card" data-author="方老师">
+        <div class="aat-big-avatar" style="background:linear-gradient(135deg,#c98a3e,#8f5f1e);">方</div>
+        <b>方老师</b>
+        <span class="aat-creator-field">习惯养成 / 时间管理</span>
+        <p>相信秩序感能被设计出来，专注把家庭节奏调慢一点点。</p>
+        <div class="aat-creator-nums">
+          <div><b>96</b>作品</div>
+          <div><b>9.8万</b>关注</div>
+        </div>
+      </article>
+
+      <article class="aat-creator-card" data-author="小满一家">
+        <div class="aat-big-avatar" style="background:linear-gradient(135deg,#5c7396,#374a68);">满</div>
+        <b>小满一家</b>
+        <span class="aat-creator-field">日常记录 / 双职工家庭</span>
+        <p>一个普通四口之家的影像日记，记录忙碌生活里的小确幸。</p>
+        <div class="aat-creator-nums">
+          <div><b>204</b>作品</div>
+          <div><b>15.7万</b>关注</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 用户评价 -->
+<section class="aat-reviews">
+  <div class="aat-section">
+    <div class="aat-section-head">
+      <span class="aat-eyebrow">社区口碑</span>
+      <h2>来自家庭的真实声音</h2>
+      <p>我们更在意长期的信任，而不是一次性的热闹。这些评价来自社区用户的公开留言。</p>
+    </div>
+
+    <div class="aat-review-wrap">
+      <article class="aat-review">
+        <div class="aat-stars">★★★★★</div>
+        <p class="aat-review-text">最打动我的是那种克制。安安老师不会告诉你必须怎么做，而是把几个家庭摊开给你看，让你自己决定。作为一个容易焦虑的妈妈，这种内容反而让我放松下来。</p>
+        <div class="aat-review-user">
+          <span class="aat-mini-avatar" style="background:#c2557a;">木</span>
+          <div><b>木子妈妈</b><small>关注 2 年 · 两个孩子的母亲</small></div>
+        </div>
+      </article>
+
+      <article class="aat-review">
+        <div class="aat-stars">★★★★★</div>
+        <p class="aat-review-text">习惯养成那几期我反复看了三遍，把睡前流程重新梳理了一遍，孩子自己都说晚上没那么乱了。内容很具体，不是空话。</p>
+        <div class="aat-review-user">
+          <span class="aat-mini-avatar" style="background:#c98a3e;">阿</span>
+          <div><b>阿哲爸爸</b><small>关注 8 个月 · 小学三年级家长</small></div>
+        </div>
+      </article>
+
+      <article class="aat-review">
+        <div class="aat-stars">★★★★☆</div>
+        <p class="aat-review-text">作为一线老师，我很认可这里的专业性。有些观点在教研会上也被反复讨论过。如果能再多一些特殊儿童家庭的内容就更好了。</p>
+        <div class="aat-review-user">
+          <span class="aat-mini-avatar" style="background:#5b8a5a;">陈</span>
+          <div><b>陈老师</b><small>关注 3 年 · 小学教师</small></div>
+        </div>
+      </article>
+
+      <article class="aat-review">
+        <div class="aat-stars">★★★★★</div>
+        <p class="aat-review-text">画面干净，节奏舒服，晚上哄睡之后看一集刚好。不像有些内容一上来就制造焦虑，这里更像是一种陪伴。</p>
+        <div class="aat-review-user">
+          <span class="aat-mini-avatar" style="background:#7d6a9c;">青</span>
+          <div><b>青柠</b><small>关注 1 年 · 新手妈妈</small></div>
+        </div>
+      </article>
+
+      <article class="aat-review">
+        <div class="aat-stars">★★★★★</div>
+        <p class="aat-review-text">我是从创作者投稿入口加入的。第一次投稿就收到了很详细的反馈，不是那种敷衍的模板回复。后来还参与了月度创作挑战，认识了一群很认真的人。</p>
+        <div class="aat-review-user">
+          <span class="aat-mini-avatar" style="background:#5c7396;">野</span>
+          <div><b>野原记录</b><small>社区创作者 · 签约 1 年</small></div>
+        </div>
+      </article>
+
+      <article class="aat-review">
+        <div class="aat-stars">★★★★☆</div>
+        <p class="aat-review-text">希望专题能更新得再快一点，等“陪伴的 100 种方式”第三季等了好久。不过每集质量都在线，也就愿意等。</p>
+        <div class="aat-review-user">
+          <span class="aat-mini-avatar" style="background:#b5713f;">慢</span>
+          <div><b>慢半拍的家</b><small>关注 2 年 · 社区活跃用户</small></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 品牌动态 + 榜单 -->
+<section class="aat-dynamics" id="aat-dynamics">
+  <div class="aat-section">
+    <div class="aat-section-head">
+      <span class="aat-eyebrow">企业动态</span>
+      <h2>官方发布 · 品牌与内容的最新进展</h2>
+      <p>品牌资讯、内容更新与社区活动，按时间倒序排列，第一时间了解官方动态。</p>
+    </div>
+
+    <div class="aat-dyn-grid">
+      <div class="aat-timeline">
+        <div class="aat-tl-item">
+          <div class="aat-tl-date">2026-11-19</div>
+          <h4>《陪伴的 100 种方式》第三季上线</h4>
+          <p>新增 6 集原创影像，聚焦“工作日父母的高质量陪伴”，并同步开放社区共创征集。</p>
+        </div>
+        <div class="aat-tl-item">
+          <div class="aat-tl-date">2026-11-08</div>
+          <h4>年度创作者创作挑战开启报名</h4>
+          <p>主题为「我家的一个小习惯」，提交者将获得剪辑思路指导与专题推荐机会。</p>
+        </div>
+        <div class="aat-tl-item">
+          <div class="aat-tl-date">2026-10-26</div>
+          <h4>社区内容品质规范 2.0 对外发布</h4>
+          <p>进一步明确原创、正版与内容审核标准，持续提升平台内容的专业度与口碑。</p>
+        </div>
+        <div class="aat-tl-item">
+          <div class="aat-tl-date">2026-10-12</div>
+          <h4>公益影像计划走进第 8 个乡村社区</h4>
+          <p>联合心理教师团队完成 4 场线下放映与家庭工作坊，相关影像将在专题中陆续上线。</p>
+        </div>
+      </div>
+
+      <div class="aat-rank">
+        <h3>本周热度榜 · 社区投票产生</h3>
+        <div class="aat-rank-item">
+          <div class="aat-rank-no">1</div>
+          <b>孩子发脾气时，先别急着讲道理</b>
+          <small>4.2 万播放</small>
+        </div>
+        <div class="aat-rank-item">
+          <div class="aat-rank-no">2</div>
+          <b>父亲的二十个问题</b>
+          <small>3.8 万播放</small>
+        </div>
+        <div class="aat-rank-item">
+          <div class="aat-rank-no">3</div>
+          <b>一个提问公式，让对话不再变成审问</b>
+          <small>3.1 万播放</small>
+        </div>
+        <div class="aat-rank-item">
+          <div class="aat-rank-no">4</div>
+          <b>允许孩子哭：把眼泪当作一种语言</b>
+          <small>2.7 万播放</small>
+        </div>
+        <div class="aat-rank-item">
+          <div class="aat-rank-no">5</div>
+          <b>放学后的城市路线</b>
+          <small>2.2 万播放</small>
+        </div>
+        <p style="font-size:12px;color:var(--aat-ink-soft);margin-top:14px;line-height:1.7;">榜单每周一更新，依据播放、收藏与社区投票综合计算，仅供参考。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="aat-faq" id="aat-faq">
+  <div class="aat-section">
+    <div class="aat-section-head" style="text-align:center;">
+      <span class="aat-eyebrow">帮助中心</span>
+      <h2>常见问题</h2>
+    </div>
+
+    <div class="aat-faq-list">
+      <details open>
+        <summary>安安老师的内容适合什么年龄段的孩子和家庭？</summary>
+        <div class="aat-faq-body">内容主要面向 3 至 12 岁孩子的家庭，同时也包含面向父母的自我成长内容。每期视频在简介中会标注适用年龄段与主题标签，方便家长根据实际情况选择。</div>
+      </details>
+      <details>
+        <summary>网站上的内容都是原创的吗？</summary>
+        <div class="aat-faq-body">是的。安安老师官方网站发布的内容均为品牌自制或签约创作者原创作品，坚持正版授权与高清制作标准。专题企划中的访谈与投稿内容，也会在发布前与作者确认授权范围。</div>
+      </details>
+      <details>
+        <summary>我想成为社区创作者，需要满足什么条件？</summary>
+        <div class="aat-faq-body">不限身份与地域，只要你有真实的家庭生活记录与持续创作的意愿即可。通过页面上的投稿入口提交作品，团队会在 7 个工作日内给出反馈。通过初审后可参与月度创作挑战，表现突出者有机会进入签约计划。</div>
+      </details>
+      <details>
+        <summary>投稿之后多久会收到回复？</summary>
+        <div class="aat-faq-body">一般 7 个工作日内会通过站内消息或邮件回复。如果超过两周没有收到反馈，可以再次通过联系入口补充提交，并说明上次提交的时间。</div>
+      </details>
+      <details>
+        <summary>专题内容会持续更新吗？</summary>
+        <div class="aat-faq-body">会。品牌专题采用连载制，《陪伴的 100 种方式》保持每月更新，《写给孩子的一封信》保持每月一期的节奏。最新进度会在公告条与品牌动态中同步。</div>
+      </details>
+      <details>
+        <summary>是否支持内容合作或品牌联名？</summary>
+        <div class="aat-faq-body">支持。我们欢迎与教育机构、公益组织、亲子品牌展开内容合作。合作以内容品质与价值观一致性为前提，具体可通过联系入口提交合作说明。</div>
+      </details>
+      <details>
+        <summary>如何反馈内容问题或提出建议？</summary>
+        <div class="aat-faq-body">每期内容页均设有反馈入口，也可以通过联系模块提供的邮箱提交。团队会定期汇总社区建议，并在品牌动态中公开回应重要的内容调整。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 联系 -->
+<section class="aat-contact" id="aat-contact">
+  <div class="aat-contact-inner">
+    <div>
+      <h2>和安安老师一起，记录真实的成长</h2>
+      <p>无论你是想投稿、合作，还是单纯想说一句话，我们都愿意听。品牌官方团队会在工作日内回复每一条留言。</p>
+      <div class="aat-contact-actions">
+        <button class="aat-contact-btn" data-modal="aatSubmitModal">提交投稿</button>
+        <button class="aat-contact-btn aat-white-ghost" data-modal="aatShareModal">分享给朋友</button>
+        <button class="aat-contact-btn aat-white-ghost" id="aatCopyLink">复制页面链接</button>
+      </div>
+    </div>
+
+    <div class="aat-contact-info">
+      <h3>官方联系方式</h3>
+      <div class="aat-ci-line"><span>品牌合作</span><span>brand@anan-edu.cn</span></div>
+      <div class="aat-ci-line"><span>内容投稿</span><span>create@anan-edu.cn</span></div>
+      <div class="aat-ci-line"><span>社区支持</span><span>support@anan-edu.cn</span></div>
+      <div class="aat-ci-line"><span>工作时间</span><span>周一至周五 10:00-19:00</span></div>
+      <div class="aat-ci-line"><span>办公地址</span><span>华东 · 家庭教育内容中心</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="aat-footer">
+  <div class="aat-footer-inner">
+    <div>
+      <div class="aat-footer-brand">
+        <div class="aat-logo-mark">安</div>
+        <b>安安老师</b>
+      </div>
+      <p>安安老师官方网站 · 专注家庭教育与亲子成长的视频品牌。以原创、正版、高清的内容为核心，持续运营一个真实、温暖、多元的内容生态。</p>
+    </div>
+    <div>
+      <h4>内容导航</h4>
+      <ul>
+        <li><a href="#aat-focus">焦点影像</a></li>
+        <li><a href="#aat-stream">视频内容库</a></li>
+        <li><a href="#aat-special">专题企划</a></li>
+        <li><a href="#aat-creators">创作者矩阵</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>关于品牌</h4>
+      <ul>
+        <li><a href="#aat-about">品牌故事</a></li>
+        <li><a href="#aat-dynamics">企业动态</a></li>
+        <li><a href="#aat-faq">帮助中心</a></li>
+        <li><a href="#aat-contact">联系我们</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>社区参与</h4>
+      <ul>
+        <li><a href="#" data-modal="aatSubmitModal">创作者投稿</a></li>
+        <li><a href="#aat-dynamics">创作挑战报名</a></li>
+        <li><a href="#aat-reviews">社区口碑</a></li>
+        <li><a href="#" data-modal="aatShareModal">分享页面</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="aat-footer-bottom">
+    <span>© 2026 安安老师品牌 · 版权所有 · 持续运营中</span>
+    <span>官方网站 · 内容均为原创正版 · 品质与口碑并重</span>
+  </div>
+</footer>
+
+<!-- 回到顶部 -->
+<button class="aat-to-top" id="aatToTop" aria-label="回到顶部">↑</button>
+
+<!-- Toast -->
+<div class="aat-toast" id="aatToast"></div>
+
+<!-- 投稿弹窗 -->
+<div class="aat-modal-mask" id="aatSubmitModal">
+  <div class="aat-modal">
+    <button class="aat-modal-close" data-close>×</button>
+    <h3>创作者投稿入口</h3>
+    <p class="aat-modal-sub">填写基本信息，官方内容团队将在 7 个工作日内与你联系。</p>
+    <label for="aatF1">你的昵称</label>
+    <input id="aatF1" type="text" placeholder="例如：小满一家">
+    <label for="aatF2">作品方向</label>
+    <select id="aatF2">
+      <option>情绪支持</option>
+      <option>习惯养成</option>
+      <option>城市家庭记录</option>
+      <option>实用技巧</option>
+      <option>人物故事</option>
+      <option>其他方向</option>
+    </select>
+    <label for="aatF3">联系方式</label>
+    <input id="aatF3" type="text" placeholder="邮箱或常用社交账号">
+    <label for="aatF4">作品简介</label>
+    <textarea id="aatF4" rows="3" placeholder="简单介绍你的作品主题、时长与创作背景"></textarea>
+    <button class="aat-modal-submit" id="aatSubmitForm">提交投稿</button>
+  </div>
+</div>
+
+<!-- 分享弹窗 -->
+<div class="aat-modal-mask" id="aatShareModal">
+  <div class="aat-modal">
+    <button class="aat-modal-close" data-close>×</button>
+    <h3>分享安安老师官方网站</h3>
+    <p class="aat-modal-sub">把真实的成长故事，分享给同样在努力的家庭。</p>
+    <div class="aat-share-row">
+      <button class="aat-share-item" data-share="微信"><b>微</b>微信</button>
+      <button class="aat-share-item" data-share="微博"><b>博</b>微博</button>
+      <button class="aat-share-item" data-share="QQ"><b>Q</b>QQ</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ============ Toast ============ */
+  var toastEl = document.getElementById('aatToast');
+  var toastTimer = null;
+  function showToast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('aat-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){
+      toastEl.classList.remove('aat-show');
+    }, 2200);
+  }
+
+  /* ============ 移动端导航 ============ */
+  var burger = document.getElementById('aatBurger');
+  var nav = document.getElementById('aatMainNav');
+  burger.addEventListener('click', function(){
+    var open = nav.classList.toggle('aat-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){
+      nav.classList.remove('aat-open');
+      burger.setAttribute('aria-expanded','false');
+    }
+  });
+
+  /* ============ 回到顶部 ============ */
+  var toTop = document.getElementById('aatToTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 500){ toTop.classList.add('aat-show'); }
+    else { toTop.classList.remove('aat-show'); }
+  });
+  toTop.addEventListener('click', function(){
+    window.scrollTo({ top:0, behavior:'smooth' });
+  });
+
+  /* ============ 搜索反馈 ============ */
+  var searchInput = document.getElementById('aatSearchInput');
+  var searchBtn = document.getElementById('aatSearchBtn');
+  var searchHint = document.getElementById('aatSearchHint');
+  var hintTimer = null;
+
+  function doSearch(){
+    var q = searchInput.value.trim();
+    if(!q){
+      searchHint.textContent = '试试输入：情绪、习惯、时间管理、城市家庭';
+      searchHint.style.display = 'block';
+      clearTimeout(hintTimer);
+      hintTimer = setTimeout(function(){ searchHint.style.display='none'; }, 2600);
+      return;
+    }
+    searchHint.textContent = '正在为你检索「' + q + '」相关的内容…';
+    searchHint.style.display = 'block';
+    clearTimeout(hintTimer);
+    hintTimer = setTimeout(function(){
+      searchHint.textContent = '已为你找到与「' + q + '」相关的精品内容，可下拉浏览视频内容库';
+      setTimeout(function(){ searchHint.style.display='none'; }, 2400);
+    }, 700);
+  }
+  searchBtn.addEventListener('click', doSearch);
+  searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ doSearch(); }
+  });
+
+  /* ============ 点赞 / 收藏 ============ */
+  document.querySelectorAll('[data-like]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var em = btn.querySelector('em');
+      if(!em) return;
+      var n = parseInt(em.textContent.replace(/,/g,''), 10) || 0;
+      if(btn.classList.contains('aat-liked')){
+        n = Math.max(0, n - 1);
+        btn.classList.remove('aat-liked');
+        showToast('已取消点赞');
+      } else {
+        n = n + 1;
+        btn.classList.add('aat-liked');
+        showToast('感谢你的喜欢');
+      }
+      em.textContent = n.toLocaleString('en-US');
+    });
+  });
+
+  document.querySelectorAll('[data-save]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      if(btn.classList.contains('aat-saved')){
+        btn.classList.remove('aat-saved');
+        btn.textContent = '☆';
+        showToast('已取消收藏');
+      } else {
+        btn.classList.add('aat-saved');
+        btn.textContent = '★';
+        showToast('已加入收藏夹');
+      }
+    });
+  });
+
+  /* ============ 标签筛选 ============ */
+  var filterBar = document.getElementById('aatFilterBar');
+  var cards = document.querySelectorAll('#aatVideoGrid .aat-vcard');
+  filterBar.addEventListener('click', function(e){
+    var btn = e.target.closest('.aat-chip');
+    if(!btn) return;
+    filterBar.querySelectorAll('.aat-chip').forEach(function(c){ c.classList.remove('aat-on'); });
+    btn.classList.add('aat-on');
+    var f = btn.getAttribute('data-filter');
+    cards.forEach(function(card){
+      var show = (f === 'all' || card.getAttribute('data-cat') === f);
+      card.style.display = show ? '' : 'none';
+    });
+  });
+
+  /* ============ 通用点击提示 ============ */
+  document.querySelectorAll('[data-toast]').forEach(function(el){
+    el.addEventListener('click', function(){
+      showToast(el.getAttribute('data-toast'));
+    });
+  });
+  document.querySelectorAll('.aat-creator-card').forEach(function(el){
+    el.addEventListener('click', function(){
+      showToast('正在加载「' + el.getAttribute('data-author') + '」的创作者主页');
+    });
+  });
+
+  /* ============ 弹窗控制 ============ */
+  var modalTriggers = document.querySelectorAll('[data-modal]');
+  modalTriggers.forEach(function(t){
+    t.addEventListener('click', function(e){
+      e.preventDefault();
+      var id = t.getAttribute('data-modal');
+      var m = document.getElementById(id);
+      if(m){ m.classList.add('aat-open'); }
+    });
+  });
+  document.querySelectorAll('.aat-modal-mask').forEach(function(mask){
+    mask.addEventListener('click', function(e){
+      if(e.target === mask){ mask.classList.remove('aat-open'); }
+    });
+    var closeBtn = mask.querySelector('[data-close]');
+    if(closeBtn){
+      closeBtn.addEventListener('click', function(){ mask.classList.remove('aat-open'); });
+    }
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+      document.querySelectorAll('.aat-modal-mask.aat-open').forEach(function(m){
+        m.classList.remove('aat-open');
+      });
+    }
+  });
+
+  /* ============ 投稿提交 ============ */
+  var submitForm = document.getElementById('aatSubmitForm');
+  if(submitForm){
+    submitForm.addEventListener('click', function(){
+      var name = document.getElementById('aatF1').value.trim();
+      if(!name){
+        showToast('请先填写你的昵称');
+        return;
+      }
+      showToast('投稿已提交，官方团队将尽快与你联系');
+      document.getElementById('aatSubmitModal').classList.remove('aat-open');
+      document.getElementById('aatF1').value = '';
+      document.getElementById('aatF3').value = '';
+      document.getElementById('aatF4').value = '';
+    });
+  }
+
+  /* ============ 分享 ============ */
+  document.querySelectorAll('[data-share]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var s = btn.getAttribute('data-share');
+      showToast('已生成分享内容，可在' + s + '中粘贴发送');
+    });
+  });
+
+  /* ============ 复制链接 ============ */
+  var copyBtn = document.getElementById('aatCopyLink');
+  if(copyBtn){
+    copyBtn.addEventListener('click', function(){
+      var url = location.href;
+      function ok(){ showToast('页面链接已复制，欢迎分享给更多家庭'); }
+      function fallback(){
+        var ta = document.createElement('textarea');
+        ta.value = url;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try{ document.execCommand('copy'); ok(); }
+        catch(err){ showToast('复制失败，请手动复制浏览器地址'); }
+        document.body.removeChild(ta);
+      }
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(url).then(ok).catch(fallback);
+      } else {
+        fallback();
+      }
+    });
+  }
+
+  /* ============ 数字滚动 ============ */
+  var counted = false;
+  function runCounters(){
+    if(counted) return;
+    counted = true;
+    document.querySelectorAll('[data-count]').forEach(function(el){
+      var target = parseInt(el.getAttribute('data-count'), 10);
+      var small = el.querySelector('small');
+      var suffix = small ? small.outerHTML : '';
+      var start = performance.now();
+      var dur = 1200;
+      function step(now){
+        var p = Math.min(1, (now - start) / dur);
+        var eased = 1 - Math.pow(1 - p, 3);
+        var val = Math.round(target * eased);
+        el.innerHTML = val.toLocaleString('en-US') + suffix;
+        if(p < 1){ requestAnimationFrame(step); }
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  if('IntersectionObserver' in window){
+    var statEl = document.querySelector('.aat-hero-stats');
+    if(statEl){
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){
+          if(en.isIntersecting){ runCounters(); io.disconnect(); }
+        });
+      }, { threshold: 0.3 });
+      io.observe(statEl);
+    }
+  } else {
+    runCounters();
+  }
+
+  /* ============ 首屏浮动提示 ============ */
+  setTimeout(function(){
+    showToast('新专题《陪伴的 100 种方式》第三季已上线');
+  }, 1600);
+
+})();
+</script>
+</body>
+          </html>
